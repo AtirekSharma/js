@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 25px;
+    padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.block {
+    background: white;
+    border: 2px solid #4682b4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+h1 {
+    text-align: center;
+    padding: 30px 0;
+    color: #2c5282;
+    font-size: 2.5rem;
+    margin: 0;
+}
+h2 {
+    color: #2c5282;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+button {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin: 8px 0;
+}
+button:hover {
+    background-color: #3a6d99;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 200px;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #4682b4;
+    box-shadow: 0 0 0 2px rgba(70, 130, 180, 0.2);
+}
+#form-inputs input {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+#gradeOutput {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #4682b4;
+}
+#clickArea {
+    padding: 25px;
+    border: 2px dashed #4682b4;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+#clickArea:hover {
+    background-color: #f0f8ff;
+}
+#colorBox {
+    height: 80px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+#circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+    margin: 0 auto;
+}
+#circle:hover {
+    transform: scale(1.05);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.grade-table th, .grade-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.grade-table th {
+    background-color: #f0f8ff;
+}
+.grade-table tr:hover {
+    background-color: #f8f9fa;
+}
